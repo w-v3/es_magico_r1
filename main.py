@@ -6,7 +6,7 @@ from db_setup.db_setup import ProductSKU, ProductListing, engine
 from typing import List, Optional
 
 app = FastAPI()
-engine = create_engine('sqlite:///db_setup/local.db')
+engine = create_engine('sqlite://local.db')
 SessionLocal = sessionmaker(bind=engine)
 
 # Response Models
